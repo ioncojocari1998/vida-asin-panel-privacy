@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIDA ASIN Panel — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         max-width: 44rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1 { font-size: 1.7rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  .data { color: #666; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  hr { border: 0; border-top: 1px solid #8884; margin: 3rem 0; }
+  code { background: #8882; padding: .1em .35em; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<h1>VIDA ASIN Panel — Privacy Policy</h1>
+<p class="data">Last updated: 18 September 2026 · Publisher: VIDA TRADE LLC</p>
+
+<h2>What this extension is</h2>
+<p>VIDA ASIN Panel is an internal tool for employees of VIDA TRADE LLC. When an employee opens
+an Amazon product page, it shows a panel with the company's own operational data for that
+product: stock on hand, expiry dates, orders, advertising performance and a stock-out forecast.
+It is not a consumer product and is distributed privately.</p>
+
+<h2>What data the extension collects</h2>
+<p><strong>None.</strong> The extension does not collect, transmit, sell or share any personal
+information. It has no analytics, no tracking, no advertising, and no server of its own that
+receives data.</p>
+
+<h2>What the extension reads</h2>
+<ul>
+  <li>The ASIN (product identifier) visible in the address of the Amazon product page the user
+      is viewing. This is used only to look up that product in the company's own data, and is
+      not stored or sent anywhere.</li>
+  <li>The company's own Google Sheets and the company's own stock-forecast file. These are read
+      over HTTPS with <code>credentials: 'omit'</code> — no account, cookie or token of the user
+      is used or sent.</li>
+</ul>
+
+<h2>What the extension stores</h2>
+<p>Only on the user's own computer, using the browser's <code>chrome.storage.local</code>:</p>
+<ul>
+  <li>the user's display preferences (attribution window, ACoS thresholds, whether Sponsored
+      Display is included);</li>
+  <li>a short-lived copy of the company data already fetched, so the panel does not re-download
+      it on every page view.</li>
+</ul>
+<p>This storage never leaves the device. Uninstalling the extension removes it.</p>
+
+<h2>Who the data is shared with</h2>
+<p>Nobody. The extension sends no data to the publisher or to any third party. The only network
+requests it makes are to <code>docs.google.com</code> and <code>oos-radar.vercel.app</code>, to
+read the company's own files; as with any web request, those services see the request itself and
+the originating IP address, under their own privacy terms.</p>
+
+<h2>Permissions and why they are needed</h2>
+<ul>
+  <li><strong>storage</strong> — to keep the user's settings and the local cache described above.</li>
+  <li><strong>activeTab</strong> — so the popup can tell which Amazon tab is open and ask its panel
+      to refresh.</li>
+  <li><strong>alarms</strong> — to refresh the stock forecast in the background a few times a day,
+      so opening a product page stays fast.</li>
+  <li><strong>host permission for amazon.com</strong> — the panel is drawn on the product page.</li>
+  <li><strong>host permissions for docs.google.com and oos-radar.vercel.app</strong> — to read the
+      company's own data files.</li>
+</ul>
+
+<h2>Remote code</h2>
+<p>The extension executes no remote code. All code is contained in the uploaded package.</p>
+
+<h2>Contact</h2>
+<p>VIDA TRADE LLC — nelucojocari98@gmail.com</p>
+
+<hr>
+
+<h1 lang="ro">VIDA ASIN Panel — Politica de confidențialitate</h1>
+<p class="data" lang="ro">Ultima actualizare: 18 septembrie 2026 · VIDA TRADE LLC</p>
+
+<div lang="ro">
+<h2>Ce este extensia</h2>
+<p>VIDA ASIN Panel este o unealtă internă a companiei VIDA TRADE LLC. Când un angajat deschide o
+pagină de produs Amazon, extensia arată un panou cu datele operaționale ale companiei pentru acel
+produs: stoc, expirări, comenzi, performanța reclamelor și prognoza de ruptură de stoc. Nu este un
+produs pentru publicul larg și se distribuie privat.</p>
+
+<h2>Ce date colectează</h2>
+<p><strong>Niciuna.</strong> Extensia nu colectează, nu transmite, nu vinde și nu împarte nicio
+informație personală. Nu are analitice, nu urmărește nimic, nu afișează reclame și nu are niciun
+server propriu care să primească date.</p>
+
+<h2>Ce citește</h2>
+<ul>
+  <li>Codul ASIN al produsului din adresa paginii Amazon deschise — folosit doar ca să caute
+      produsul în datele companiei; nu se stochează și nu se trimite nicăieri.</li>
+  <li>Foile Google ale companiei și fișierul cu prognoza de stoc al companiei, prin HTTPS, fără
+      niciun cont, cookie sau jeton al utilizatorului.</li>
+</ul>
+
+<h2>Ce păstrează</h2>
+<p>Doar pe calculatorul utilizatorului: setările lui de afișare și o copie de scurtă durată a
+datelor deja descărcate, ca panoul să nu le ceară din nou la fiecare pagină. Nu pleacă nicăieri și
+dispar la dezinstalare.</p>
+
+<h2>Cu cine se împart datele</h2>
+<p>Cu nimeni. Singurele cereri de rețea sunt către <code>docs.google.com</code> și
+<code>oos-radar.vercel.app</code>, pentru fișierele proprii ale companiei.</p>
+
+<h2>Contact</h2>
+<p>VIDA TRADE LLC — nelucojocari98@gmail.com</p>
+</div>
+
+</body>
+</html>
